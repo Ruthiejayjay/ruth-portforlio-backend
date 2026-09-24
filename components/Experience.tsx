@@ -91,7 +91,7 @@ export default function Experience() {
               className="pt-4"
             >
               <a
-                href="/ruth-james-cv.pdf"
+                href="/ruth_james_cv.pdf"
                 download
                 className="font-mono inline-flex items-center gap-2 px-5 py-2.5 text-xl bg-white border border-[#2a2a2a] text-black rounded-md hover:border-green-400 transition"
               >
