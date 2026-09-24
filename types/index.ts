@@ -16,3 +16,12 @@ export interface NavLink{
     label: string;
     href: string;
 }
+
+export interface ProjectItem {
+    name: string;
+    type: string;
+    description: string;
+    highlights: string[];
+    stack: string[];
+    link?: string;
+}

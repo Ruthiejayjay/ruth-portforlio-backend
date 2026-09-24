@@ -1,4 +1,4 @@
-import { ExperienceItem, TechItem, NavLink } from "../types";
+import { ExperienceItem, TechItem, NavLink, ProjectItem } from "../types";
 
 export const experienceItems: ExperienceItem[] = [
   {
@@ -68,8 +68,68 @@ export const experienceItems: ExperienceItem[] = [
 
 export const navLinks: NavLink[] = [
   { label: "Home", href: "#home" },
+  { label: "Projects", href: "#projects" },
   { label: "About", href: "#about" },
   { label: "Contact me", href: "#contact" },
+];
+
+export const projects: ProjectItem[] = [
+  {
+    name: "Spent",
+    type: "Production Fintech Platform",
+    description:
+      "A production fintech platform where I work on backend systems for transactions, authentication, transaction limits, KYC, and third-party integrations.",
+    highlights: [
+      "Built NIN/BVN verification using QoreID and Maplerad",
+      "Designed a provider abstraction for switching KYC providers without changing the core verification flow",
+      "Built and maintained transaction and transaction-limit logic",
+      "Implemented social authentication and other backend workflows",
+    ],
+    stack: ["Laravel", "PHP", "PostgreSQL", "Filament", "Third-party APIs"],
+    link: "https://spentnow.co/",
+  },
+  {
+    name: "Soutle",
+    type: "Production AI Video Platform",
+    description:
+      "An AI video generation platform where I worked across the application, with backend-focused contributions to authentication, authorization, OAuth, and content integrations.",
+    highlights: [
+      "Implemented authentication and authorization workflows",
+      "Worked on OAuth authentication and account flows",
+      "Integrated WordPress content through a GraphQL API",
+      "Built and maintained frontend features for the AI video generation platform",
+    ],
+
+    stack: ["Next.js", "Express.js", "GraphQL", "OAuth", "WordPress"],
+    link: "https://soutle.com/",
+  },
+  {
+    name: "Imprompto",
+    type: "Production AI Prompt Platform",
+    description:
+      "An AI prompt generation platform where I worked on the application backend, focusing on prompt management, user data, and access to public and private prompts.",
+    highlights: [
+      "Built functionality for creating and managing user prompts",
+      "Implemented retrieval of users' public and private prompts",
+      "Worked with MongoDB for application data and prompt storage",
+      "Built and maintained API logic connecting prompt data with the application",
+    ],
+    stack: ["Express.js", "Node.js", "MongoDB", "Next.js"],
+    link: "https://imprompto.com/",
+  },
+  {
+    name: "The Car Connection",
+    type: "Production Automotive Platform",
+    description:
+      "Contributed to an established production automotive platform as part of the HGM team at Internet Brands.",
+    highlights: [
+      "Developed and maintained features in a Zend Framework application",
+      "Worked across backend application logic and JavaScript",
+      "Debugged and extended existing production functionality",
+    ],
+    stack: ["PHP", "Zend Framework", "JavaScript"],
+    link: "https://www.thecarconnection.com/",
+  },
 ];
 
 export const techStack: TechItem[] = [
